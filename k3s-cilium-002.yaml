@@ -1,0 +1,23 @@
+kubeProxyReplacement: true
+k8sServiceHost: 46.62.253.183
+k8sServicePort: 6443
+# nodePort:
+#   enabled: true
+# ingressController:
+#   default: true
+#   hostNetwork: 
+#     enabled: false
+#   enabled: true
+#   enableProxyProtocol: false
+#   loadbalancerMode: shared
+#   enforceHttps: false
+ipam:
+  mode: cluster-pool
+  operator:
+    clusterPoolIPv4MaskSize: 16
+    clusterPoolIPv4PodCIDRList: 10.120.0.0/16
+envoy:
+  enabled: false
+cluster:
+  id: 2
+  name: k3s-cilium-002

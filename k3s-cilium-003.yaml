@@ -1,0 +1,11 @@
+kubeProxyReplacement: false
+ipam:
+  mode: cluster-pool
+  operator:
+    clusterPoolIPv4MaskSize: 16
+    clusterPoolIPv4PodCIDRList: 10.240.0.0/16
+envoy:
+  enabled: false
+cluster:
+  id: 3
+  name: k3s-cilium-003
