@@ -1,5 +1,3 @@
-
-```bash
 HOST1=116.203.62.155 # Nürnberg
 HOST2=46.62.253.183 # Helsinki
 #HOST3=78.47.242.152 # Falkenstein
@@ -88,7 +86,3 @@ k --context $CLUSTER2 annotate svc/echo-server service.cilium.io/affinity=local 
 
 #k --context $CLUSTER3 exec pod/ubuntu -n tests -- curl hello-kubernetes-cip
 #k --context $CLUSTER3 exec pod/ubuntu -n tests -- nslookup hello-kubernetes-headless
-```
-
-### Links
-[[Cilium]]
